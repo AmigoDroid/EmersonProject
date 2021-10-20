@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat , sans-serif;
+    background-color: silver;
+}
+body h1{
+    text-align: center;
+}
+#div-login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    background-color: bisque;
+    padding: 0 30px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 5.5px 0.1px rgba(66, 65, 65, 0.425);
+    transform: translateX(-50%) translateY(-50%);
+}
+#div-login h1{
+    text-align: center;
+    font-weight: 600;
+    
+}
+#div-login p{
+    margin-top: -30px;
+    margin-left: 25px;
+}
+#div-login button{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    left: 27%;
+}
+#div-login button:hover{
+    background-color: white;
+    color: blueviolet;
+}
+#div-input{
+    width: 100%;
+    position: relative;
+}
+#div-input input{
+    width: 100%;
+    margin-bottom: 40px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid silver;
+}
+#div-input label{
+position: absolute;
+top:8px;
+left: 15px;
+font-size: 18px;
+font-weight: 600;
+pointer-events: none;
+transition: .25s;
+color: silver;
+}
+#div-input input:focus~label,#div-input input:valid~label{
+    top: -20px;
+    font-size: 14px;
+    color: black;
+}
